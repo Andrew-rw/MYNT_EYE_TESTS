@@ -1,0 +1,1314 @@
+winkiller@WK-PC:~/MYNT-EYE-S-SDK$ make clean all
+Make clean
+RM: ./_build/
+RM: ./_output/
+RM: ./samples/_build/
+RM: ./samples/_output/
+make[1]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK'
+make[1]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK'
+make[1]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK'
+Make cleanros
+RM: ./wrappers/ros/build/
+RM: ./wrappers/ros/devel/
+RM: ./wrappers/ros/.catkin_workspace
+RM: ./wrappers/ros/src/CMakeLists.txt
+make[1]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK'
+Make init
+Init tools
+Install cmd: sudo apt-get install
+Install deps: build-essential curl cmake git make
+All deps already exist
+Init deps
+Install cmd: sudo apt-get install
+Install deps: libv4l-dev
+All deps already exist
+Make uninstall
+sudo rm -rf /usr/local/include/mynteye/
+[sudo] password for winkiller: 
+sudo rm -rf /usr/local/lib/libmynteye.so*
+sudo rm -rf /usr/local/lib/cmake/mynteye/
+sudo rm -rf /usr/local/share/mynteye/
+Make build
+CD: ./_build
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- HOST_ARCH: x86_64
+-- Found OpenCV: /usr (found version "3.2.0") 
+-- 
+-- Platform:
+--   HOST_OS: Linux
+--   HOST_NAME: Ubuntu
+--   HOST_ARCH: x86_64
+--   HOST_COMPILER: GNU
+--     COMPILER_VERSION: 7.5.0
+--     COMPILER_VERSION_MAJOR: 7
+--     COMPILER_VERSION_MINOR: 5
+--     COMPILER_VERSION_PATCH: 0
+--     COMPILER_VERSION_TWEAK: 
+--   OpenCV_VERSION: 3.2.0
+--     OpenCV_VERSION_MAJOR: 3
+--     OpenCV_VERSION_MINOR: 2
+--     OpenCV_VERSION_PATCH: 0
+--     OpenCV_VERSION_TWEAK: 0
+--     OpenCV_VERSION_STATUS: 
+--     OpenCV_WITH_WORLD: 
+--   MYNTEYE_VERSION: 2.5.0
+--     MYNTEYE_VERSION_MAJOR: 2
+--     MYNTEYE_VERSION_MINOR: 5
+--     MYNTEYE_VERSION_PATCH: 0
+--     MYNTEYE_VERSION_TWEAK: 
+-- 
+-- Options:
+--   WITH_API: ON
+--     OpenCV: YES
+--     OpenCV_VERSION: 3.2.0
+--     OpenCV_WORLD: NO
+--   WITH_DEVICE_INFO_REQUIRED: ON
+--   WITH_CAM_MODELS: ON
+--   WITH_BOOST: ON
+--     Boost: YES
+--     Boost_VERSION: 1.65.1
+--   WITH_GLOG: OFF
+-- 
+-- Features:
+--   Filesystem: boost
+-- 
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX0X
+-- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+-- Using flag -std=c++11
+-- C_FLAGS: -Wall -Wextra -march=native
+-- CXX_FLAGS: -Wall -Wextra -std=c++11 -march=native
+-- Namespace: mynteye
+-- RPATH: /usr/lib/x86_64-linux-gnu
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/winkiller/MYNT-EYE-S-SDK/_build
+make[1]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+make[2]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+Scanning dependencies of target camera_models
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+[  2%] Building CXX object CMakeFiles/camera_models.dir/src/mynteye/api/camera_models/camera.cc.o
+[  5%] Building CXX object CMakeFiles/camera_models.dir/src/mynteye/api/camera_models/equidistant_camera.cc.o
+[  7%] Building CXX object CMakeFiles/camera_models.dir/src/mynteye/api/camera_models/util/gpl.cc.o
+[ 10%] Linking CXX static library ../_output/lib/libcamera_models.a
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+[ 10%] Built target camera_models
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+Scanning dependencies of target mynteye
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+[ 12%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/uvc/linux/uvc-v4l2.cc.o
+[ 15%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/types.cc.o
+[ 17%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/util/files.cc.o
+[ 20%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/util/strings.cc.o
+[ 22%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/channel/bytes.cc.o
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/channel/bytes.h:24:0,
+                 from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/channel/bytes.cc:14:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:111:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, major)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/channel/bytes.h:24:0,
+                 from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/channel/bytes.cc:14:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:112:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, minor)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+[ 25%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/channel/channels.cc.o
+[ 27%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/channel/file_channel.cc.o
+[ 30%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/config.cc.o
+[ 32%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/context.cc.o
+[ 35%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/device.cc.o
+[ 37%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/motions.cc.o
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/motions.h:24:0,
+                 from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/motions.cc:14:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:111:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, major)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/motions.h:24:0,
+                 from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/motions.cc:14:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:112:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, minor)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+[ 40%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/standard/channels_adapter_s.cc.o
+[ 42%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/standard/device_s.cc.o
+[ 45%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/standard/streams_adapter_s.cc.o
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/standard/streams_adapter_s.cc:19:0:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:111:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, major)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/standard/streams_adapter_s.cc:19:0:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:112:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, minor)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+[ 47%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/standard2/channels_adapter_s2.cc.o
+[ 50%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/standard2/device_s2.cc.o
+[ 52%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/standard2/streams_adapter_s2.cc.o
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/standard2/streams_adapter_s2.cc:19:0:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:111:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, major)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/standard2/streams_adapter_s2.cc:19:0:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:112:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, minor)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+[ 55%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/streams.cc.o
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/streams.cc:22:0:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:111:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, major)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/streams.cc:22:0:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:112:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, minor)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+[ 57%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/types.cc.o
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/types.cc:14:0:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:111:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, major)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+In file included from /home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/types.cc:14:0:
+/home/winkiller/MYNT-EYE-S-SDK/include/mynteye/device/types.h:112:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+   MYNTEYE_PROPERTY(value_t, minor)
+             ^~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                  
+/home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/types.cc:64:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   if (major() == 0x01) {
+             ^~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                            
+/home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/types.cc:66:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   } else if (major() == 0x02) {
+             ^~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                     
+/home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/types.cc:68:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   } else if (major() == 0x03) {
+             ^~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                     
+/home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/types.cc:70:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   } else if (major() == 0x04) {
+             ^~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                     
+/home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/types.cc:72:13: warning: In the GNU C Library, "major" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "major", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "major", you should undefine it after including <sys/types.h>.
+   } else if (major() == 0x05) {
+             ^~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                     
+/home/winkiller/MYNT-EYE-S-SDK/src/mynteye/device/types.cc:75:13: warning: In the GNU C Library, "minor" is defined
+ by <sys/sysmacros.h>. For historical compatibility, it is
+ currently defined by <sys/types.h> as well, but we plan to
+ remove this soon. To use "minor", include <sys/sysmacros.h>
+ directly. If you did not intend to use a system-defined macro
+ "minor", you should undefine it after including <sys/types.h>.
+   s << static_cast<int>(minor());
+             ^~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                                                                                                                                                                                   
+[ 60%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/device/utils.cc.o
+[ 62%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/api.cc.o
+[ 65%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/dl.cc.o
+[ 67%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/processor.cc.o
+[ 70%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/synthetic.cc.o
+[ 72%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/processor/disparity_processor.cc.o
+[ 75%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/processor/disparity_normalized_processor.cc.o
+[ 77%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/processor/root_camera_processor.cc.o
+[ 80%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/processor/rectify_processor_ocv.cc.o
+[ 82%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/correspondence.cc.o
+[ 85%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/version_checker.cc.o
+[ 87%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/data_tools.cc.o
+[ 90%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/processor/depth_processor.cc.o
+[ 92%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/processor/points_processor.cc.o
+[ 95%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/api/processor/rectify_processor.cc.o
+[ 97%] Building CXX object CMakeFiles/mynteye.dir/src/mynteye/miniglog.cc.o
+[100%] Linking CXX shared library ../_output/lib/libmynteye.so
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+[100%] Built target mynteye
+make[2]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+make[1]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/_build'
+Make install
+[ 10%] Built target camera_models
+[100%] Built target mynteye
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/local/include/mynteye/mynteye.h
+-- Installing: /usr/local/include/mynteye/global.h
+-- Installing: /usr/local/include/mynteye/logger.h
+-- Installing: /usr/local/include/mynteye/types.h
+-- Installing: /usr/local/include/mynteye/device/callbacks.h
+-- Installing: /usr/local/include/mynteye/device/context.h
+-- Installing: /usr/local/include/mynteye/device/device.h
+-- Installing: /usr/local/include/mynteye/device/types.h
+-- Installing: /usr/local/include/mynteye/device/utils.h
+-- Installing: /usr/local/include/mynteye/util/files.h
+-- Installing: /usr/local/include/mynteye/util/strings.h
+-- Installing: /usr/local/include/mynteye/util/times.h
+-- Installing: /usr/local/include/mynteye/api/api.h
+-- Installing: /usr/local/include/mynteye/api/plugin.h
+-- Installing: /usr/local/include/mynteye/api/object.h
+-- Installing: /usr/local/include/mynteye/miniglog.h
+-- Installing: /usr/local/include/mynteye/callbacks.h
+-- Installing: /usr/local/include/mynteye/context.h
+-- Installing: /usr/local/include/mynteye/device.h
+-- Installing: /usr/local/include/mynteye/files.h
+-- Installing: /usr/local/include/mynteye/glog_init.h
+-- Installing: /usr/local/include/mynteye/strings.h
+-- Installing: /usr/local/include/mynteye/times.h
+-- Installing: /usr/local/include/mynteye/utils.h
+-- Installing: /usr/local/include/mynteye/api.h
+-- Installing: /usr/local/include/mynteye/plugin.h
+-- Installing: /usr/local/include/mynteye/object.h
+-- Installing: /usr/local/lib/libmynteye.so.2.5.0
+-- Installing: /usr/local/lib/libmynteye.so.2
+-- Installing: /usr/local/lib/libmynteye.so
+-- Set runtime path of "/usr/local/lib/libmynteye.so.2.5.0" to "/usr/lib/x86_64-linux-gnu"
+-- Installing: /usr/local/lib/cmake/mynteye/mynteye-config.cmake
+-- Installing: /usr/local/lib/cmake/mynteye/mynteye-config-version.cmake
+-- Installing: /usr/local/lib/cmake/mynteye/mynteye-targets.cmake
+-- Installing: /usr/local/lib/cmake/mynteye/mynteye-targets-release.cmake
+-- Installing: /usr/local/share/mynteye/build.info
+Make samples
+CD: ./samples/_build
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- HOST_ARCH: x86_64
+-- Found OpenCV: /usr (found version "3.2.0") 
+-- 
+-- Platform:
+--   HOST_OS: Linux
+--   HOST_NAME: Ubuntu
+--   HOST_ARCH: x86_64
+--   HOST_COMPILER: GNU
+--     COMPILER_VERSION: 7.5.0
+--     COMPILER_VERSION_MAJOR: 7
+--     COMPILER_VERSION_MINOR: 5
+--     COMPILER_VERSION_PATCH: 0
+--     COMPILER_VERSION_TWEAK: 
+--   OpenCV_VERSION: 3.2.0
+--     OpenCV_VERSION_MAJOR: 3
+--     OpenCV_VERSION_MINOR: 2
+--     OpenCV_VERSION_PATCH: 0
+--     OpenCV_VERSION_TWEAK: 0
+--     OpenCV_VERSION_STATUS: 
+--     OpenCV_WITH_WORLD: 
+-- 
+-- Options:
+--   WITH_API: ON
+--     OpenCV: YES
+--     OpenCV_VERSION: 3.2.0
+--     OpenCV_WORLD: NO
+--   WITH_DEVICE_INFO_REQUIRED: ON
+--   WITH_CAM_MODELS: ON
+--   WITH_BOOST: ON
+--     Boost: YES
+--     Boost_VERSION: 1.65.1
+--   WITH_GLOG: OFF
+-- 
+-- Features:
+--   Filesystem: boost
+-- 
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Performing Test COMPILER_SUPPORTS_CXX0X
+-- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+-- Using flag -std=c++11
+-- C_FLAGS: -Wall -Wextra -march=native
+-- CXX_FLAGS: -Wall -Wextra -std=c++11 -march=native
+-- Found mynteye: 2.5.0
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.3.4
+-- Found eigen: /usr/include/eigen3  
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   date_time
+--   iostreams
+--   serialization
+--   chrono
+--   atomic
+--   regex
+-- Checking for module 'libopenni'
+--   Found libopenni, version 1.5.4.0
+-- Found openni: /usr/lib/libOpenNI.so  
+-- Checking for module 'libopenni2'
+--   Found libopenni2, version 2.2.0.3
+-- Found OpenNI2: /usr/lib/libOpenNI2.so  
+-- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+** WARNING ** io features related to ensenso will be disabled
+-- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+** WARNING ** io features related to davidSDK will be disabled
+-- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+** WARNING ** io features related to dssdk will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+but not all the files it references.
+
+-- Found libusb-1.0: /usr/include  
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found Flann: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a  
+-- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+** WARNING ** visualization features related to ensenso will be disabled
+-- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+** WARNING ** visualization features related to davidSDK will be disabled
+-- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+** WARNING ** visualization features related to dssdk will be disabled
+-- Could NOT find RSSDK (missing: _RSSDK_LIBRARIES) 
+** WARNING ** visualization features related to rssdk will be disabled
+-- Found qhull: /usr/lib/x86_64-linux-gnu/libqhull.so  
+-- looking for PCL_COMMON
+-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+-- looking for PCL_OCTREE
+-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+-- looking for PCL_IO
+-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+-- looking for PCL_KDTREE
+-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+-- looking for PCL_SEARCH
+-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+-- looking for PCL_SAMPLE_CONSENSUS
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+-- looking for PCL_FILTERS
+-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+-- looking for PCL_2D
+-- Found PCL_2D: /usr/include/pcl-1.8  
+-- looking for PCL_GEOMETRY
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.8  
+-- looking for PCL_FEATURES
+-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+-- looking for PCL_ML
+-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+-- looking for PCL_SEGMENTATION
+-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+-- looking for PCL_VISUALIZATION
+-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+-- looking for PCL_SURFACE
+-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+-- looking for PCL_REGISTRATION
+-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+-- looking for PCL_KEYPOINTS
+-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+-- looking for PCL_TRACKING
+-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+-- looking for PCL_RECOGNITION
+-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+-- looking for PCL_STEREO
+-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+-- looking for PCL_APPS
+-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+-- looking for PCL_IN_HAND_SCANNER
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.8  
+-- looking for PCL_MODELER
+-- Found PCL_MODELER: /usr/include/pcl-1.8  
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.8  
+-- looking for PCL_OUTOFCORE
+-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+-- looking for PCL_PEOPLE
+-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_common.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkInfovisCore;vtkFiltersExtraction;vtkCommonExecutionModel;vtkFiltersCore;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkftgl;vtkDICOMParser;vtkDomainsChemistry;vtkIOXML;vtkIOGeometry;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkFiltersAMR;vtkParallelCore;vtkIOLegacy;vtkFiltersFlowPaths;vtkFiltersGeneric;vtkFiltersHybrid;vtkImagingSources;vtkFiltersHyperTree;vtkFiltersImaging;vtkImagingGeneral;vtkFiltersModeling;vtkFiltersParallel;vtkFiltersParallelFlowPaths;vtkParallelMPI;vtkFiltersParallelGeometry;vtkFiltersParallelImaging;vtkFiltersParallelMPI;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersPython;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkWrappingPythonCore;vtkWrappingTools;vtkFiltersReebGraph;vtkFiltersSMP;vtkFiltersSelection;vtkFiltersTexture;vtkFiltersVerdict;verdict;vtkGUISupportQt;vtkInteractionStyle;vtkRenderingOpenGL;vtkImagingHybrid;vtkIOImage;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkGUISupportQtOpenGL;vtkGUISupportQtSQL;vtkIOSQL;sqlite3;vtkGUISupportQtWebkit;vtkViewsQt;vtkViewsInfovis;vtkInfovisLayout;vtkInfovisBoostGraphAlgorithms;vtkRenderingLabel;vtkViewsCore;vtkInteractionWidgets;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingVolume;vtkGeovisCore;/usr/lib/x86_64-linux-gnu/libproj.so;vtkIOAMR;/usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so;vtkIOEnSight;vtkIOExodus;vtkexoIIc;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;vtkIOExport;vtkRenderingGL2PS;vtkRenderingContextOpenGL;/usr/lib/x86_64-linux-gnu/libgl2ps.so;vtkIOFFMPEG;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkIOGDAL;vtkIOGeoJSON;vtkIOImport;vtkIOInfovis;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkIOLSDyna;vtkIOMINC;vtkIOMPIImage;vtkIOMPIParallel;vtkIOParallel;vtkIONetCDF;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOMySQL;vtkIOODBC;vtkIOPLY;vtkIOParallelExodus;vtkIOParallelLSDyna;vtkIOParallelNetCDF;vtkIOParallelXML;vtkIOPostgreSQL;vtkIOVPIC;VPIC;vtkIOVideo;vtkIOXdmf2;vtkxdmf2;vtkImagingMath;vtkImagingMorphological;vtkImagingStatistics;vtkImagingStencil;vtkInteractionImage;vtkLocalExample;vtkParallelMPI4Py;vtkPythonInterpreter;vtkRenderingExternal;vtkRenderingFreeTypeFontConfig;vtkRenderingImage;vtkRenderingLIC;vtkRenderingLOD;vtkRenderingMatplotlib;vtkRenderingParallel;vtkRenderingParallelLIC;vtkRenderingQt;vtkRenderingVolumeAMR;vtkRenderingVolumeOpenGL;vtkTestingGenericBridge;vtkTestingIOSQL;vtkTestingRendering;vtkViewsContext2D;vtkViewsGeovis;vtkWrappingJava;optimized;/usr/lib/x86_64-linux-gnu/libpcl_io.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_io.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;optimized;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_search.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_search.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_features.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_features.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_ml.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_ml.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_visualization.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_visualization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_registration.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_registration.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_tracking.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_tracking.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_recognition.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_recognition.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_stereo.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_stereo.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_apps.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_apps.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_people.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_people.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;vtkChartsCore;vtkCommonColor;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkInfovisCore;vtkFiltersExtraction;vtkCommonExecutionModel;vtkFiltersCore;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkftgl;vtkDICOMParser;vtkDomainsChemistry;vtkIOXML;vtkIOGeometry;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkFiltersAMR;vtkParallelCore;vtkIOLegacy;vtkFiltersFlowPaths;vtkFiltersGeneric;vtkFiltersHybrid;vtkImagingSources;vtkFiltersHyperTree;vtkFiltersImaging;vtkImagingGeneral;vtkFiltersModeling;vtkFiltersParallel;vtkFiltersParallelFlowPaths;vtkParallelMPI;vtkFiltersParallelGeometry;vtkFiltersParallelImaging;vtkFiltersParallelMPI;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersPython;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkWrappingPythonCore;vtkWrappingTools;vtkFiltersReebGraph;vtkFiltersSMP;vtkFiltersSelection;vtkFiltersTexture;vtkFiltersVerdict;verdict;vtkGUISupportQt;vtkInteractionStyle;vtkRenderingOpenGL;vtkImagingHybrid;vtkIOImage;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkGUISupportQtOpenGL;vtkGUISupportQtSQL;vtkIOSQL;sqlite3;vtkGUISupportQtWebkit;vtkViewsQt;vtkViewsInfovis;vtkInfovisLayout;vtkInfovisBoostGraphAlgorithms;vtkRenderingLabel;vtkViewsCore;vtkInteractionWidgets;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingVolume;vtkGeovisCore;/usr/lib/x86_64-linux-gnu/libproj.so;vtkIOAMR;/usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so;vtkIOEnSight;vtkIOExodus;vtkexoIIc;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;vtkIOExport;vtkRenderingGL2PS;vtkRenderingContextOpenGL;/usr/lib/x86_64-linux-gnu/libgl2ps.so;vtkIOFFMPEG;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkIOGDAL;vtkIOGeoJSON;vtkIOImport;vtkIOInfovis;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkIOLSDyna;vtkIOMINC;vtkIOMPIImage;vtkIOMPIParallel;vtkIOParallel;vtkIONetCDF;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOMySQL;vtkIOODBC;vtkIOPLY;vtkIOParallelExodus;vtkIOParallelLSDyna;vtkIOParallelNetCDF;vtkIOParallelXML;vtkIOPostgreSQL;vtkIOVPIC;VPIC;vtkIOVideo;vtkIOXdmf2;vtkxdmf2;vtkImagingMath;vtkImagingMorphological;vtkImagingStatistics;vtkImagingStencil;vtkInteractionImage;vtkLocalExample;vtkParallelMPI4Py;vtkPythonInterpreter;vtkRenderingExternal;vtkRenderingFreeTypeFontConfig;vtkRenderingImage;vtkRenderingLIC;vtkRenderingLOD;vtkRenderingMatplotlib;vtkRenderingParallel;vtkRenderingParallelLIC;vtkRenderingQt;vtkRenderingVolumeAMR;vtkRenderingVolumeOpenGL;vtkTestingGenericBridge;vtkTestingIOSQL;vtkTestingRendering;vtkViewsContext2D;vtkViewsGeovis;vtkWrappingJava  
+-- Found PCL: 1.8.1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/winkiller/MYNT-EYE-S-SDK/samples/_build
+make[1]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[2]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target record
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[  1%] Building CXX object CMakeFiles/record.dir/record.cc.o
+[  2%] Building CXX object CMakeFiles/record.dir/dataset.cc.o
+[  4%] Linking CXX executable ../_output/bin/record
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[  4%] Built target record
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target device_writer
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[  5%] Building CXX object CMakeFiles/device_writer.dir/device_writer.cc.o
+[  7%] Linking CXX static library ../_output/lib/libdevice_writer.a
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[  7%] Built target device_writer
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target save_all_infos
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[  8%] Building CXX object CMakeFiles/save_all_infos.dir/save_all_infos.cc.o
+[ 10%] Linking CXX executable ../_output/bin/save_all_infos
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 10%] Built target save_all_infos
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target write_imu_params
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 11%] Building CXX object CMakeFiles/write_imu_params.dir/write_imu_params.cc.o
+[ 13%] Linking CXX executable ../_output/bin/write_imu_params
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 13%] Built target write_imu_params
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target write_img_params
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 14%] Building CXX object CMakeFiles/write_img_params.dir/write_img_params.cc.o
+[ 15%] Linking CXX executable ../_output/bin/write_img_params
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 15%] Built target write_img_params
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_depth_and_points
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 17%] Building CXX object CMakeFiles/get_depth_and_points.dir/get_depth_and_points.cc.o
+In file included from /usr/include/pcl-1.8/pcl/visualization/impl/pcl_visualizer.hpp:48:0,
+                 from /usr/include/pcl-1.8/pcl/visualization/pcl_visualizer.h:2262,
+                 from /home/winkiller/MYNT-EYE-S-SDK/samples/util_pcl.h:22,
+                 from /home/winkiller/MYNT-EYE-S-SDK/samples/get_depth_and_points.cc:21:
+/usr/include/vtk-6.3/vtkMath.h:664:3: warning: multi-line comment [-Wcomment]
+   // a & b \\
+   ^
+/usr/include/vtk-6.3/vtkMath.h:668:3: warning: multi-line comment [-Wcomment]
+   // 1 & 0 \\
+   ^
+/usr/include/vtk-6.3/vtkMath.h:671:3: warning: multi-line comment [-Wcomment]
+   // a & b \\
+   ^
+[ 18%] Building CXX object CMakeFiles/get_depth_and_points.dir/util_cv.cc.o
+[ 20%] Building CXX object CMakeFiles/get_depth_and_points.dir/util_pcl.cc.o
+In file included from /usr/include/pcl-1.8/pcl/visualization/impl/pcl_visualizer.hpp:48:0,
+                 from /usr/include/pcl-1.8/pcl/visualization/pcl_visualizer.h:2262,
+                 from /home/winkiller/MYNT-EYE-S-SDK/samples/util_pcl.h:22,
+                 from /home/winkiller/MYNT-EYE-S-SDK/samples/util_pcl.cc:14:
+/usr/include/vtk-6.3/vtkMath.h:664:3: warning: multi-line comment [-Wcomment]
+   // a & b \\
+   ^
+/usr/include/vtk-6.3/vtkMath.h:668:3: warning: multi-line comment [-Wcomment]
+   // 1 & 0 \\
+   ^
+/usr/include/vtk-6.3/vtkMath.h:671:3: warning: multi-line comment [-Wcomment]
+   // a & b \\
+   ^
+[ 21%] Linking CXX executable ../_output/bin/get_depth_and_points
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 21%] Built target get_depth_and_points
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target ctrl_auto_exposure
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 23%] Building CXX object CMakeFiles/ctrl_auto_exposure.dir/ctrl_auto_exposure.cc.o
+[ 24%] Building CXX object CMakeFiles/ctrl_auto_exposure.dir/util_cv.cc.o
+[ 26%] Linking CXX executable ../_output/bin/ctrl_auto_exposure
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 26%] Built target ctrl_auto_exposure
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target ctrl_sync_timestamp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 27%] Building CXX object CMakeFiles/ctrl_sync_timestamp.dir/ctrl_sync_timestamp.cc.o
+[ 28%] Linking CXX executable ../_output/bin/ctrl_sync_timestamp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 28%] Built target ctrl_sync_timestamp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target ctrl_iic_address
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 30%] Building CXX object CMakeFiles/ctrl_iic_address.dir/ctrl_iic_address.cc.o
+[ 31%] Linking CXX executable ../_output/bin/ctrl_iic_address
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 31%] Built target ctrl_iic_address
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target ctrl_infrared
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 33%] Building CXX object CMakeFiles/ctrl_infrared.dir/ctrl_infrared.cc.o
+[ 34%] Linking CXX executable ../_output/bin/ctrl_infrared
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 34%] Built target ctrl_infrared
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target ctrl_manual_exposure
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 36%] Building CXX object CMakeFiles/ctrl_manual_exposure.dir/ctrl_manual_exposure.cc.o
+[ 37%] Building CXX object CMakeFiles/ctrl_manual_exposure.dir/util_cv.cc.o
+[ 39%] Linking CXX executable ../_output/bin/ctrl_manual_exposure
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 39%] Built target ctrl_manual_exposure
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target ctrl_imu_range
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 40%] Building CXX object CMakeFiles/ctrl_imu_range.dir/ctrl_imu_range.cc.o
+[ 42%] Building CXX object CMakeFiles/ctrl_imu_range.dir/util_cv.cc.o
+[ 43%] Linking CXX executable ../_output/bin/ctrl_imu_range
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 43%] Built target ctrl_imu_range
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_depth_with_region
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 44%] Building CXX object CMakeFiles/get_depth_with_region.dir/get_depth_with_region.cc.o
+[ 46%] Linking CXX executable ../_output/bin/get_depth_with_region
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 46%] Built target get_depth_with_region
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_img_params
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 47%] Building CXX object CMakeFiles/get_img_params.dir/get_img_params.cc.o
+[ 49%] Linking CXX executable ../_output/bin/get_img_params
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 49%] Built target get_img_params
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_depth
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 50%] Building CXX object CMakeFiles/get_depth.dir/get_depth.cc.o
+[ 52%] Linking CXX executable ../_output/bin/get_depth
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 52%] Built target get_depth
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target camera_with_junior_device_api
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 53%] Building CXX object CMakeFiles/camera_with_junior_device_api.dir/camera_with_junior_device_api.cc.o
+[ 55%] Linking CXX executable ../_output/bin/camera_with_junior_device_api
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 55%] Built target camera_with_junior_device_api
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target camera_with_senior_api
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 56%] Building CXX object CMakeFiles/camera_with_senior_api.dir/camera_with_senior_api.cc.o
+[ 57%] Linking CXX executable ../_output/bin/camera_with_senior_api
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 57%] Built target camera_with_senior_api
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_stereo_rectified
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 59%] Building CXX object CMakeFiles/get_stereo_rectified.dir/get_stereo_rectified.cc.o
+[ 60%] Linking CXX executable ../_output/bin/get_stereo_rectified
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 60%] Built target get_stereo_rectified
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target write_device_info
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 62%] Building CXX object CMakeFiles/write_device_info.dir/write_device_info.cc.o
+[ 63%] Linking CXX executable ../_output/bin/write_device_info
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 63%] Built target write_device_info
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_data_without_select
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 65%] Building CXX object CMakeFiles/get_data_without_select.dir/get_data_without_select.cc.o
+[ 66%] Linking CXX executable ../_output/bin/get_data_without_select
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 66%] Built target get_data_without_select
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_imu
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 68%] Building CXX object CMakeFiles/get_imu.dir/get_imu.cc.o
+[ 69%] Building CXX object CMakeFiles/get_imu.dir/util_cv.cc.o
+[ 71%] Linking CXX executable ../_output/bin/get_imu
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 71%] Built target get_imu
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_from_callbacks
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 72%] Building CXX object CMakeFiles/get_from_callbacks.dir/get_from_callbacks.cc.o
+[ 73%] Building CXX object CMakeFiles/get_from_callbacks.dir/util_cv.cc.o
+[ 75%] Linking CXX executable ../_output/bin/get_from_callbacks
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 75%] Built target get_from_callbacks
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_disparity
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 76%] Building CXX object CMakeFiles/get_disparity.dir/get_disparity.cc.o
+[ 78%] Linking CXX executable ../_output/bin/get_disparity
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 78%] Built target get_disparity
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target save_single_image
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 79%] Building CXX object CMakeFiles/save_single_image.dir/save_single_image.cc.o
+/home/winkiller/MYNT-EYE-S-SDK/samples/save_single_image.cc: In function ‘int main(int, char**)’:
+/home/winkiller/MYNT-EYE-S-SDK/samples/save_single_image.cc:20:5: warning: ‘__builtin___snprintf_chk’ output may be truncated before the last format character [-Wformat-truncation=]
+ int main(int argc, char *argv[]) {
+     ^~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from /usr/include/c++/7/cstdio:42,
+                 from /usr/include/c++/7/ext/string_conversions.h:43,
+                 from /usr/include/c++/7/bits/basic_string.h:6361,
+                 from /usr/include/c++/7/string:52,
+                 from /usr/include/opencv2/core/cvstd.hpp:58,
+                 from /usr/include/opencv2/core/base.hpp:58,
+                 from /usr/include/opencv2/core.hpp:54,
+                 from /usr/include/opencv2/highgui.hpp:46,
+                 from /usr/include/opencv2/highgui/highgui.hpp:48,
+                 from /home/winkiller/MYNT-EYE-S-SDK/samples/save_single_image.cc:14:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:65:44: note: ‘__builtin___snprintf_chk’ output between 12 and 21 bytes into a destination of size 20
+        __bos (__s), __fmt, __va_arg_pack ());
+                                            ^
+/home/winkiller/MYNT-EYE-S-SDK/samples/save_single_image.cc:20:5: warning: ‘__builtin___snprintf_chk’ output may be truncated before the last format character [-Wformat-truncation=]
+ int main(int argc, char *argv[]) {
+     ^~~~
+In file included from /usr/include/stdio.h:862:0,
+                 from /usr/include/c++/7/cstdio:42,
+                 from /usr/include/c++/7/ext/string_conversions.h:43,
+                 from /usr/include/c++/7/bits/basic_string.h:6361,
+                 from /usr/include/c++/7/string:52,
+                 from /usr/include/opencv2/core/cvstd.hpp:58,
+                 from /usr/include/opencv2/core/base.hpp:58,
+                 from /usr/include/opencv2/core.hpp:54,
+                 from /usr/include/opencv2/highgui.hpp:46,
+                 from /usr/include/opencv2/highgui/highgui.hpp:48,
+                 from /home/winkiller/MYNT-EYE-S-SDK/samples/save_single_image.cc:14:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:65:44: note: ‘__builtin___snprintf_chk’ output between 12 and 21 bytes into a destination of size 20
+        __bos (__s), __fmt, __va_arg_pack ());
+                                            ^
+[ 81%] Linking CXX executable ../_output/bin/save_single_image
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 81%] Built target save_single_image
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_imu_correspondence
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 82%] Building CXX object CMakeFiles/get_imu_correspondence.dir/get_imu_correspondence.cc.o
+[ 84%] Building CXX object CMakeFiles/get_imu_correspondence.dir/util_cv.cc.o
+[ 85%] Linking CXX executable ../_output/bin/get_imu_correspondence
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 85%] Built target get_imu_correspondence
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_with_plugin
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 86%] Building CXX object CMakeFiles/get_with_plugin.dir/get_with_plugin.cc.o
+[ 88%] Linking CXX executable ../_output/bin/get_with_plugin
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 88%] Built target get_with_plugin
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target ctrl_imu_low_pass_filter
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 89%] Building CXX object CMakeFiles/ctrl_imu_low_pass_filter.dir/ctrl_imu_low_pass_filter.cc.o
+[ 91%] Linking CXX executable ../_output/bin/ctrl_imu_low_pass_filter
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 91%] Built target ctrl_imu_low_pass_filter
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_imu_params
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 92%] Building CXX object CMakeFiles/get_imu_params.dir/get_imu_params.cc.o
+[ 94%] Linking CXX executable ../_output/bin/get_imu_params
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 94%] Built target get_imu_params
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target get_device_info
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 95%] Building CXX object CMakeFiles/get_device_info.dir/get_device_info.cc.o
+[ 97%] Linking CXX executable ../_output/bin/get_device_info
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 97%] Built target get_device_info
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Scanning dependencies of target ctrl_framerate
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[ 98%] Building CXX object CMakeFiles/ctrl_framerate.dir/ctrl_framerate.cc.o
+[100%] Linking CXX executable ../_output/bin/ctrl_framerate
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+[100%] Built target ctrl_framerate
+make[2]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+make[1]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/samples/_build'
+Make ros
+Base path: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros
+Source space: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/src
+Build space: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build
+Devel space: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/devel
+Install space: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/install
+Creating symlink "/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/src/CMakeLists.txt" pointing to "/opt/ros/melodic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/src -DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/devel -DCMAKE_INSTALL_PREFIX=/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/install -G Unix Makefiles" in "/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build"
+####
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/devel
+-- Using CMAKE_PREFIX_PATH: /home/winkiller/cbbot50_ws/devel;/opt/ros/melodic
+-- This workspace overlays: /home/winkiller/cbbot50_ws/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build/test_results
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.28
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - mynt_eye_ros_wrapper
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'mynt_eye_ros_wrapper'
+-- ==> add_subdirectory(mynt_eye_ros_wrapper)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- mynt_eye_ros_wrapper: 0 messages, 1 services
+-- Found mynteye: 2.5.0
+-- Found OpenCV: /usr (found version "3.2.0") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build
+####
+#### Running command: "make -j8 -l8" in "/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build"
+####
+make[1]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[2]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target std_msgs_generate_messages_nodejs
+Scanning dependencies of target _mynt_eye_ros_wrapper_generate_messages_check_deps_GetInfo
+Scanning dependencies of target bond_generate_messages_lisp
+Scanning dependencies of target std_msgs_generate_messages_eus
+Scanning dependencies of target std_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_cpp
+Scanning dependencies of target tf2_msgs_generate_messages_nodejs
+Scanning dependencies of target std_msgs_generate_messages_lisp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target bond_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target tf2_msgs_generate_messages_eus
+Scanning dependencies of target tf2_msgs_generate_messages_py
+Scanning dependencies of target actionlib_msgs_generate_messages_py
+Scanning dependencies of target tf2_msgs_generate_messages_cpp
+Scanning dependencies of target tf2_msgs_generate_messages_lisp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target actionlib_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_msgs_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target _mynt_eye_ros_wrapper_generate_messages_check_deps_GetInfo
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target actionlib_msgs_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target actionlib_generate_messages_nodejs
+Scanning dependencies of target actionlib_generate_messages_py
+Scanning dependencies of target actionlib_generate_messages_eus
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target tf_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target sensor_msgs_generate_messages_eus
+Scanning dependencies of target tf_generate_messages_lisp
+Scanning dependencies of target sensor_msgs_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target actionlib_generate_messages_nodejs
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target tf_generate_messages_nodejs
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target tf_generate_messages_lisp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target sensor_msgs_generate_messages_cpp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target geometry_msgs_generate_messages_py
+Scanning dependencies of target actionlib_msgs_generate_messages_eus
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target nodelet_generate_messages_lisp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target tf_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target geometry_msgs_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target rosgraph_msgs_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target rosgraph_msgs_generate_messages_py
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target nodelet_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_eus
+Scanning dependencies of target roscpp_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target tf_generate_messages_cpp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target rosgraph_msgs_generate_messages_py
+Scanning dependencies of target bond_generate_messages_cpp
+Scanning dependencies of target tf_generate_messages_eus
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target roscpp_generate_messages_py
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target actionlib_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target sensor_msgs_generate_messages_lisp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target roscpp_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target sensor_msgs_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+[  0%] Built target bond_generate_messages_cpp
+[  0%] Built target tf_generate_messages_eus
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target actionlib_generate_messages_cpp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_cpp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+Scanning dependencies of target tf_generate_messages_py
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target sensor_msgs_generate_messages_py
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target actionlib_generate_messages_lisp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target nodelet_generate_messages_cpp
+[  0%] Built target tf_generate_messages_py
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target geometry_msgs_generate_messages_eus
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target bond_generate_messages_py
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target roscpp_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target actionlib_generate_messages_lisp
+Scanning dependencies of target roscpp_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target nodelet_generate_messages_cpp
+Scanning dependencies of target rosgraph_msgs_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target bond_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_eus
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target roscpp_generate_messages_eus
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target roscpp_generate_messages_lisp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target bond_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target rosgraph_msgs_generate_messages_lisp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target nodelet_generate_messages_eus
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target roscpp_generate_messages_lisp
+Scanning dependencies of target nodelet_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target bond_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+Scanning dependencies of target nodelet_generate_messages_py
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target bond_generate_messages_nodejs
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target nodelet_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target mynt_eye_ros_wrapper_generate_messages_py
+[  0%] Built target nodelet_generate_messages_nodejs
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target mynt_eye_ros_wrapper_generate_messages_nodejs
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  0%] Built target nodelet_generate_messages_py
+[  0%] Built target bond_generate_messages_nodejs
+Scanning dependencies of target mynt_eye_ros_wrapper_generate_messages_lisp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target mynt_eye_ros_wrapper_generate_messages_eus
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target mynt_eye_ros_wrapper_generate_messages_cpp
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[  9%] Generating Python code from SRV mynt_eye_ros_wrapper/GetInfo
+[ 18%] Generating Javascript code from mynt_eye_ros_wrapper/GetInfo.srv
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 27%] Generating Lisp code from mynt_eye_ros_wrapper/GetInfo.srv
+[ 45%] Generating EusLisp code from mynt_eye_ros_wrapper/GetInfo.srv
+[ 45%] Generating EusLisp manifest code for mynt_eye_ros_wrapper
+[ 54%] Generating C++ code from mynt_eye_ros_wrapper/GetInfo.srv
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 54%] Built target mynt_eye_ros_wrapper_generate_messages_nodejs
+[ 54%] Built target mynt_eye_ros_wrapper_generate_messages_lisp
+[ 63%] Generating Python srv __init__.py for mynt_eye_ros_wrapper
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 63%] Built target mynt_eye_ros_wrapper_generate_messages_py
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 63%] Built target mynt_eye_ros_wrapper_generate_messages_cpp
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 63%] Built target mynt_eye_ros_wrapper_generate_messages_eus
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target mynteye_wrapper
+Scanning dependencies of target mynt_eye_ros_wrapper_generate_messages
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 63%] Built target mynt_eye_ros_wrapper_generate_messages
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 72%] Building CXX object mynt_eye_ros_wrapper/CMakeFiles/mynteye_wrapper.dir/src/wrapper_nodelet.cc.o
+[ 81%] Linking CXX shared library /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/devel/lib/libmynteye_wrapper.so
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 81%] Built target mynteye_wrapper
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+Scanning dependencies of target mynteye_wrapper_node
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[3]: Entering directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[ 90%] Building CXX object mynt_eye_ros_wrapper/CMakeFiles/mynteye_wrapper_node.dir/src/wrapper_node.cc.o
+[100%] Linking CXX executable /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/devel/lib/mynt_eye_ros_wrapper/mynteye_wrapper_node
+make[3]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+[100%] Built target mynteye_wrapper_node
+make[2]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+make[1]: Leaving directory '/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build'
+winkiller@WK-PC:~/MYNT-EYE-S-SDK$ cd wrappers/ros/
+winkiller@WK-PC:~/MYNT-EYE-S-SDK/wrappers/ros$ catkin_make
+Base path: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros
+Source space: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/src
+Build space: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build
+Devel space: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/devel
+Install space: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/install
+####
+#### Running command: "cmake /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/src -DCATKIN_DEVEL_PREFIX=/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/devel -DCMAKE_INSTALL_PREFIX=/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/install -G Unix Makefiles" in "/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/devel
+-- Using CMAKE_PREFIX_PATH: /home/winkiller/cbbot50_ws/devel;/opt/ros/melodic
+-- This workspace overlays: /home/winkiller/cbbot50_ws/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build/test_results
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") 
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.28
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - mynt_eye_ros_wrapper
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'mynt_eye_ros_wrapper'
+-- ==> add_subdirectory(mynt_eye_ros_wrapper)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- mynt_eye_ros_wrapper: 0 messages, 1 services
+-- Found mynteye: 2.5.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build
+####
+#### Running command: "make -j8 -l8" in "/home/winkiller/MYNT-EYE-S-SDK/wrappers/ros/build"
+####
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target bond_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target _mynt_eye_ros_wrapper_generate_messages_check_deps_GetInfo
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target nodelet_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target bond_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target bond_generate_messages_py
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target bond_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target nodelet_generate_messages_eus
+[  0%] Built target nodelet_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_py
+[  0%] Built target bond_generate_messages_nodejs
+[ 27%] Built target mynt_eye_ros_wrapper_generate_messages_lisp
+[ 27%] Built target mynt_eye_ros_wrapper_generate_messages_py
+[ 36%] Built target mynt_eye_ros_wrapper_generate_messages_nodejs
+[ 54%] Built target mynt_eye_ros_wrapper_generate_messages_eus
+[ 63%] Built target mynt_eye_ros_wrapper_generate_messages_cpp
+[ 63%] Built target mynt_eye_ros_wrapper_generate_messages
+[ 81%] Built target mynteye_wrapper
+[100%] Built target mynteye_wrapper_node
+

@@ -1,0 +1,13 @@
+-=Jetson nano d1200 installation=-
+
+Doesn't work out of the box:
+[    6.388720] uvcvideo 1-1.4:1.0: Entity type for entity Extension 4 was not initialized!
+[    6.388729] uvcvideo 1-1.4:1.0: Entity type for entity Processing 2 was not initialized!
+[    6.388734] uvcvideo 1-1.4:1.0: Entity type for entity Camera 1 was not initialized!
+
+
+
+-=Remove libs=-
+sudo rm -rf /usr/local/lib/libmynteye*
+sudo rm -rf /usr/local/lib/cmake/mynteye/
+sudo rm -rf /usr/local/share/mynteye/

@@ -1,0 +1,192 @@
+-=x64 Ubuntu 18.04=-
+syslog:
+Nov  7 16:19:54 DEV-PC kernel: [  590.592495] pci 0000:03:00.0: [8086:1576] type 01 class 0x060400
+Nov  7 16:19:54 DEV-PC kernel: [  590.592555] pci 0000:03:00.0: enabling Extended Tags
+Nov  7 16:19:54 DEV-PC kernel: [  590.592639] pci 0000:03:00.0: supports D1 D2
+Nov  7 16:19:54 DEV-PC kernel: [  590.592640] pci 0000:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Nov  7 16:19:54 DEV-PC kernel: [  590.592936] pci 0000:04:00.0: [8086:1576] type 01 class 0x060400
+Nov  7 16:19:54 DEV-PC kernel: [  590.593005] pci 0000:04:00.0: enabling Extended Tags
+Nov  7 16:19:54 DEV-PC kernel: [  590.593100] pci 0000:04:00.0: supports D1 D2
+Nov  7 16:19:54 DEV-PC kernel: [  590.593102] pci 0000:04:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Nov  7 16:19:54 DEV-PC kernel: [  590.593210] pci 0000:04:01.0: [8086:1576] type 01 class 0x060400
+Nov  7 16:19:54 DEV-PC kernel: [  590.593279] pci 0000:04:01.0: enabling Extended Tags
+Nov  7 16:19:54 DEV-PC kernel: [  590.593374] pci 0000:04:01.0: supports D1 D2
+Nov  7 16:19:54 DEV-PC kernel: [  590.593376] pci 0000:04:01.0: PME# supported from D0 D1 D2 D3hot D3cold
+Nov  7 16:19:54 DEV-PC kernel: [  590.593502] pci 0000:04:02.0: [8086:1576] type 01 class 0x060400
+Nov  7 16:19:54 DEV-PC kernel: [  590.593577] pci 0000:04:02.0: enabling Extended Tags
+Nov  7 16:19:54 DEV-PC kernel: [  590.593678] pci 0000:04:02.0: supports D1 D2
+Nov  7 16:19:54 DEV-PC kernel: [  590.593679] pci 0000:04:02.0: PME# supported from D0 D1 D2 D3hot D3cold
+Nov  7 16:19:54 DEV-PC kernel: [  590.593800] pci 0000:03:00.0: PCI bridge to [bus 04-3b]
+Nov  7 16:19:54 DEV-PC kernel: [  590.593810] pci 0000:03:00.0:   bridge window [mem 0xc4000000-0xdc0fffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.593819] pci 0000:03:00.0:   bridge window [mem 0x80000000-0xa1ffffff 64bit pref]
+Nov  7 16:19:54 DEV-PC kernel: [  590.593880] pci 0000:04:00.0: PCI bridge to [bus 05]
+Nov  7 16:19:54 DEV-PC kernel: [  590.593890] pci 0000:04:00.0:   bridge window [mem 0xdc000000-0xdc0fffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.593958] pci 0000:04:01.0: PCI bridge to [bus 06-3a]
+Nov  7 16:19:54 DEV-PC kernel: [  590.593968] pci 0000:04:01.0:   bridge window [mem 0xc4000000-0xdbefffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.593975] pci 0000:04:01.0:   bridge window [mem 0x80000000-0xa1ffffff 64bit pref]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594057] pci 0000:3b:00.0: [8086:15b5] type 00 class 0x0c0330
+Nov  7 16:19:54 DEV-PC kernel: [  590.594101] pci 0000:3b:00.0: reg 0x10: [mem 0xdbf00000-0xdbf0ffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594176] pci 0000:3b:00.0: enabling Extended Tags
+Nov  7 16:19:54 DEV-PC kernel: [  590.594275] pci 0000:3b:00.0: supports D1 D2
+Nov  7 16:19:54 DEV-PC kernel: [  590.594276] pci 0000:3b:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Nov  7 16:19:54 DEV-PC kernel: [  590.594431] pci 0000:04:02.0: PCI bridge to [bus 3b]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594444] pci 0000:04:02.0:   bridge window [mem 0xdbf00000-0xdbffffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594474] pci_bus 0000:04: Allocating resources
+Nov  7 16:19:54 DEV-PC kernel: [  590.594489] pci 0000:04:01.0: bridge window [io  0x1000-0x0fff] to [bus 06-3a] add_size 1000
+Nov  7 16:19:54 DEV-PC kernel: [  590.594492] pci 0000:03:00.0: bridge window [io  0x1000-0x0fff] to [bus 04-3b] add_size 1000
+Nov  7 16:19:54 DEV-PC kernel: [  590.594495] pci 0000:03:00.0: BAR 13: assigned [io  0x3000-0x3fff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594497] pci 0000:04:01.0: BAR 13: assigned [io  0x3000-0x3fff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594498] pci 0000:04:00.0: PCI bridge to [bus 05]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594503] pci 0000:04:00.0:   bridge window [mem 0xdc000000-0xdc0fffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594512] pci 0000:04:01.0: PCI bridge to [bus 06-3a]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594514] pci 0000:04:01.0:   bridge window [io  0x3000-0x3fff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594518] pci 0000:04:01.0:   bridge window [mem 0xc4000000-0xdbefffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594522] pci 0000:04:01.0:   bridge window [mem 0x80000000-0xa1ffffff 64bit pref]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594528] pci 0000:04:02.0: PCI bridge to [bus 3b]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594532] pci 0000:04:02.0:   bridge window [mem 0xdbf00000-0xdbffffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594540] pci 0000:03:00.0: PCI bridge to [bus 04-3b]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594542] pci 0000:03:00.0:   bridge window [io  0x3000-0x3fff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594547] pci 0000:03:00.0:   bridge window [mem 0xc4000000-0xdc0fffff]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594550] pci 0000:03:00.0:   bridge window [mem 0x80000000-0xa1ffffff 64bit pref]
+Nov  7 16:19:54 DEV-PC kernel: [  590.594661] pcieport 0000:03:00.0: enabling device (0006 -> 0007)
+Nov  7 16:19:54 DEV-PC kernel: [  590.595213] pcieport 0000:04:01.0: enabling device (0006 -> 0007)
+Nov  7 16:19:54 DEV-PC kernel: [  590.596180] xhci_hcd 0000:3b:00.0: xHCI Host Controller
+Nov  7 16:19:54 DEV-PC kernel: [  590.596188] xhci_hcd 0000:3b:00.0: new USB bus registered, assigned bus number 3
+Nov  7 16:19:54 DEV-PC kernel: [  590.597361] xhci_hcd 0000:3b:00.0: hcc params 0x200077c1 hci version 0x110 quirks 0x0000000000009810
+Nov  7 16:19:54 DEV-PC kernel: [  590.597598] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+Nov  7 16:19:54 DEV-PC kernel: [  590.597600] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Nov  7 16:19:54 DEV-PC kernel: [  590.597601] usb usb3: Product: xHCI Host Controller
+Nov  7 16:19:54 DEV-PC kernel: [  590.597602] usb usb3: Manufacturer: Linux 4.15.0-122-generic xhci-hcd
+Nov  7 16:19:54 DEV-PC kernel: [  590.597604] usb usb3: SerialNumber: 0000:3b:00.0
+Nov  7 16:19:54 DEV-PC kernel: [  590.597754] hub 3-0:1.0: USB hub found
+Nov  7 16:19:54 DEV-PC kernel: [  590.597767] hub 3-0:1.0: 2 ports detected
+Nov  7 16:19:54 DEV-PC kernel: [  590.598004] xhci_hcd 0000:3b:00.0: xHCI Host Controller
+Nov  7 16:19:54 DEV-PC kernel: [  590.598009] xhci_hcd 0000:3b:00.0: new USB bus registered, assigned bus number 4
+Nov  7 16:19:54 DEV-PC kernel: [  590.598013] xhci_hcd 0000:3b:00.0: Host supports USB 3.1 Enhanced SuperSpeed
+Nov  7 16:19:54 DEV-PC kernel: [  590.598090] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003
+Nov  7 16:19:54 DEV-PC kernel: [  590.598093] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Nov  7 16:19:54 DEV-PC kernel: [  590.598095] usb usb4: Product: xHCI Host Controller
+Nov  7 16:19:54 DEV-PC kernel: [  590.598096] usb usb4: Manufacturer: Linux 4.15.0-122-generic xhci-hcd
+Nov  7 16:19:54 DEV-PC kernel: [  590.598098] usb usb4: SerialNumber: 0000:3b:00.0
+Nov  7 16:19:54 DEV-PC kernel: [  590.598313] hub 4-0:1.0: USB hub found
+Nov  7 16:19:54 DEV-PC kernel: [  590.598327] hub 4-0:1.0: 2 ports detected
+Nov  7 16:19:54 DEV-PC upowerd[2214]: unhandled action 'bind' on /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb4/4-0:1.0
+Nov  7 16:19:54 DEV-PC upowerd[2214]: unhandled action 'bind' on /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb3/3-0:1.0
+Nov  7 16:19:54 DEV-PC upowerd[2214]: unhandled action 'bind' on /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb4
+Nov  7 16:19:54 DEV-PC upowerd[2214]: unhandled action 'bind' on /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb3
+Nov  7 16:19:55 DEV-PC kernel: [  591.532485] usb 3-1: new high-speed USB device number 2 using xhci_hcd
+Nov  7 16:19:56 DEV-PC kernel: [  591.999016] usb 3-1: New USB device found, idVendor=1e4e, idProduct=0121
+Nov  7 16:19:56 DEV-PC kernel: [  591.999022] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Nov  7 16:19:56 DEV-PC kernel: [  591.999026] usb 3-1: Product: eAP87604A00
+Nov  7 16:19:56 DEV-PC kernel: [  591.999029] usb 3-1: Manufacturer: Etron Technology, Inc.
+Nov  7 16:19:56 DEV-PC kernel: [  591.999031] usb 3-1: SerialNumber: D120020012A1J0F2A1B2J11
+Nov  7 16:19:56 DEV-PC kernel: [  592.005983] uvcvideo: Found UVC 1.00 device eAP87604A00 (1e4e:0121)
+Nov  7 16:19:56 DEV-PC kernel: [  592.058820] uvcvideo: UVC non compliance - GET_DEF(PROBE) not supported. Enabling workaround.
+Nov  7 16:19:56 DEV-PC kernel: [  592.059791] uvcvideo 3-1:1.0: Entity type for entity Extension 4 was not initialized!
+Nov  7 16:19:56 DEV-PC kernel: [  592.059795] uvcvideo 3-1:1.0: Entity type for entity Processing 3 was not initialized!
+Nov  7 16:19:56 DEV-PC kernel: [  592.059799] uvcvideo 3-1:1.0: Entity type for entity Camera 1 was not initialized!
+Nov  7 16:19:56 DEV-PC kernel: [  592.098706] uvcvideo: Unable to create debugfs 3-2 directory.
+Nov  7 16:19:56 DEV-PC kernel: [  592.098937] uvcvideo 3-1:1.0: Entity type for entity Camera 5 was not initialized!
+Nov  7 16:19:56 DEV-PC kernel: [  592.099249] input: eAP87604A00: Etron as /devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb3/3-1/3-1:1.0/input/input23
+Nov  7 16:19:56 DEV-PC mtp-probe: checking bus 3, device 2: "/sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb3/3-1"
+Nov  7 16:19:56 DEV-PC mtp-probe: bus: 3, device: 2 was not an MTP device
+Nov  7 16:19:56 DEV-PC upowerd[2214]: unhandled action 'bind' on /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb3/3-1/3-1:1.1
+Nov  7 16:19:56 DEV-PC upowerd[2214]: unhandled action 'bind' on /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb3/3-1/3-1:1.2
+Nov  7 16:19:56 DEV-PC upowerd[2214]: unhandled action 'bind' on /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb3/3-1/3-1:1.0
+Nov  7 16:19:56 DEV-PC upowerd[2214]: unhandled action 'bind' on /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/0000:04:02.0/0000:3b:00.0/usb3/3-1
+
+
+
+
+user@DEV-PC:~/MYNT-EYE-D-SDK/samples/_output/bin$ ./get_device_info 
+I/eSPDI_API: eSPDI: EtronDI_InitunameData.release = 4.15.0-122-generic
+version 4.15.0
+
+--------------------------------------------------------------------------------
+Index | Device Information
+--------------------------------------------------------------------------------
+    0 | index: 0, name: /dev/video1, type: 2, pid: 0x121, vid: 0x1e4e, chip_id: 0x15, fw_version: EX8037-SICILI-B01-A9714M-BL40U-002-Beta3-U2-256K, serial_number: D120020012A1J0F2A1B2J11
+--------------------------------------------------------------------------------
+Auto select a device to open, index: 0
+--------------------------------------------------------------------------------
+Index | Color Stream Information
+--------------------------------------------------------------------------------
+    0 | index: 0, width: 1280, height: 720, format: STREAM_MJPG
+    1 | index: 1, width: 800, height: 600, format: STREAM_MJPG
+    2 | index: 2, width: 1600, height: 600, format: STREAM_MJPG
+    3 | index: 3, width: 640, height: 480, format: STREAM_MJPG
+    4 | index: 4, width: 1280, height: 480, format: STREAM_MJPG
+    5 | index: 5, width: 2560, height: 720, format: STREAM_MJPG
+--------------------------------------------------------------------------------
+Index | Depth Stream Information
+--------------------------------------------------------------------------------
+    0 | index: 0, width: 640, height: 720, format: STREAM_YUYV
+    1 | index: 1, width: 320, height: 480, format: STREAM_YUYV
+    2 | index: 2, width: 1280, height: 720, format: STREAM_YUYV
+    3 | index: 3, width: 640, height: 480, format: STREAM_YUYV
+--------------------------------------------------------------------------------
+Open device: index = 0, name =/dev/video1, type = 2, pid = 289, vid = 7758, fw_version = EX8037-SICILI-B01-A9714M-BL40U-002-Beta3-U2-256K, sn = D120020012A1J0F2A1B2J11
+
+
+
+user@DEV-PC:~/MYNT-EYE-D-SDK/samples/_output/bin$ ./get_depth
+I/eSPDI_API: eSPDI: EtronDI_InitunameData.release = 4.15.0-122-generic
+version 4.15.0
+
+--------------------------------------------------------------------------------
+Index | Device Information
+--------------------------------------------------------------------------------
+    0 | index: 0, name: /dev/video1, type: 2, pid: 0x121, vid: 0x1e4e, chip_id: 0x15, fw_version: EX8037-SICILI-B01-A9714M-BL40U-002-Beta3-U2-256K, serial_number: D120020012A1J0F2A1B2J11
+--------------------------------------------------------------------------------
+Auto select a device to open, index: 0
+--------------------------------------------------------------------------------
+Index | Color Stream Information
+--------------------------------------------------------------------------------
+    0 | index: 0, width: 1280, height: 720, format: STREAM_MJPG
+    1 | index: 1, width: 800, height: 600, format: STREAM_MJPG
+    2 | index: 2, width: 1600, height: 600, format: STREAM_MJPG
+    3 | index: 3, width: 640, height: 480, format: STREAM_MJPG
+    4 | index: 4, width: 1280, height: 480, format: STREAM_MJPG
+    5 | index: 5, width: 2560, height: 720, format: STREAM_MJPG
+--------------------------------------------------------------------------------
+Index | Depth Stream Information
+--------------------------------------------------------------------------------
+    0 | index: 0, width: 640, height: 720, format: STREAM_YUYV
+    1 | index: 1, width: 320, height: 480, format: STREAM_YUYV
+    2 | index: 2, width: 1280, height: 720, format: STREAM_YUYV
+    3 | index: 3, width: 640, height: 480, format: STREAM_YUYV
+--------------------------------------------------------------------------------
+Open device: 0, /dev/video1
+
+I/eSPDI_API: eSPDI: EtronDI_InitunameData.release = 4.15.0-122-generic
+version 4.15.0
+D/eSPDI_API: SetPropertyValue control=7 value=0D/eSPDI_API: SetPropertyValue control=7 value=35D/eSPDI_API: SetPropertyValue control=7 value=1-- Auto-exposure state: enabled
+D/eSPDI_API: SetPropertyValue control=7 value=0D/eSPDI_API: SetPropertyValue control=7 value=12D/eSPDI_API: SetPropertyValue control=7 value=1-- Auto-white balance state: enabled
+Error: Color Mode width[1280] height[720] format[YUYV] not support. Please check the resolution list.
+
+Note:: You are using the USB 2.0 interface. Current resolution or frame rate is not supported And you can refer to Resolution Support List in the documentation.
+
+terminate called after throwing an instance of 'std::runtime_error*'
+Aborted
+
+
+user@DEV-PC:~/MYNT-EYE-D-SDK/samples/_output/bin$ lsusb -t
+/:  Bus 04.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M
+/:  Bus 03.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Video, Driver=uvcvideo, 480M
+    |__ Port 1: Dev 2, If 1, Class=Video, Driver=uvcvideo, 480M
+    |__ Port 1: Dev 2, If 2, Class=Video, Driver=uvcvideo, 480M
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/8p, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/16p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+        |__ Port 3: Dev 6, If 1, Class=Human Interface Device, Driver=usbhid, 12M
+        |__ Port 3: Dev 6, If 0, Class=Human Interface Device, Driver=usbhid, 12M
+        |__ Port 2: Dev 4, If 1, Class=Human Interface Device, Driver=usbhid, 12M
+        |__ Port 2: Dev 4, If 2, Class=Human Interface Device, Driver=usbhid, 12M
+        |__ Port 2: Dev 4, If 0, Class=Human Interface Device, Driver=usbhid, 12M
+    |__ Port 3: Dev 3, If 0, Class=Vendor Specific Class, Driver=rtsx_usb, 480M
+    |__ Port 10: Dev 5, If 0, Class=Wireless, Driver=btusb, 12M
+    |__ Port 10: Dev 5, If 1, Class=Wireless, Driver=btusb, 12M
+    |__ Port 11: Dev 7, If 0, Class=Video, Driver=uvcvideo, 480M
+    |__ Port 11: Dev 7, If 1, Class=Video, Driver=uvcvideo, 480M
+

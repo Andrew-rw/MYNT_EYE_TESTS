@@ -1,0 +1,17 @@
+winkiller@WK-PC:~/MYNT-EYE-S-SDK/samples/_output/bin$ ./get_device_info 
+I/utils.cc:35 Detecting MYNT EYE devices
+I/utils.cc:48 MYNT EYE devices:
+I/utils.cc:51   index: 0, name: MYNT-EYE-S1030, sn: 0000004A051500090913, firmware: 2.7
+I/utils.cc:60 Only one MYNT EYE device, select index: 0
+I/synthetic.cc:49 camera calib model: pinhole
+2.5.0I/get_device_info.cc:23 Device name: MYNT-EYE-S1030
+I/get_device_info.cc:24 Serial number: 0000004A051500090913
+I/get_device_info.cc:25 Firmware version: 2.7
+I/get_device_info.cc:26 Hardware version: 0.0
+I/get_device_info.cc:27 Spec version: 1.3
+I/get_device_info.cc:28 Lens type: 0000
+I/get_device_info.cc:29 IMU type: 0000
+I/get_device_info.cc:30 Nominal baseline: 30720
+I/get_device_info.cc:31 Auxiliary chip version: 0.0
+I/get_device_info.cc:33 Isp version: 0
+
